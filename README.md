@@ -3,20 +3,9 @@
 ## PublishImage Denoising using Sparse Coding with 2D-DCT Dictionary and LASSO Regularization
 Project Overview
 This project implements an advanced image denoising algorithm using sparse coding techniques with a 2D Discrete Cosine Transform (DCT) dictionary and LASSO regularization. The implementation demonstrates how sparse representation can effectively remove noise from images while preserving important structural details.
-Table of Contents
 
-Background Theory
-Implementation Details
-Key Features
-Dataset
-Results
-Installation
-Usage
-Parameter Optimization
-Performance Analysis
-Future Improvements
+### Background Theory
 
-Background Theory
 Sparse Coding for Image Denoising
 Sparse coding is based on the principle that natural images can be efficiently represented using a small number of basis functions from an overcomplete dictionary. For image denoising, we assume that:
 
@@ -24,7 +13,8 @@ Clean images have sparse representations in appropriate dictionaries
 Noise is not sparse and will be suppressed during sparse reconstruction
 The 2D-DCT basis provides an effective dictionary for natural image patches
 
-Mathematical Formulation
+### Mathematical Formulation
+
 For each image patch y, we solve the LASSO optimization problem:
 minimize ||y - Ψθ||² + λ||θ||₁
 Where:
